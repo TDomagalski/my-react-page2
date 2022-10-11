@@ -20,6 +20,7 @@ $borderDefault: #646cff;
 
 // ~~btn colors
 $btnBgDefault: #1ab00b;
+$navLinksActive: #1ab00b;
 
 // ~~random colors
 $bgFrontCounter: #0d9900;
@@ -35,7 +36,8 @@ $theme-colors: (
 	borderDefault: $borderDefault,
 	fontHoverLink: $fontHoverLink,
 	btnBgDefault: $btnBgDefault,
-	bgFrontCounter: $bgFrontCounter
+	bgFrontCounter: $bgFrontCounter,
+	navLinksActive: $navLinksActive
 );
 
 // ~~~~~~ FUNCTIONS ~~~~~~

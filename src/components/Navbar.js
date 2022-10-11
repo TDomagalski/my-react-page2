@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../img/Logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -8,6 +8,14 @@ export const Navbar = () => {
 
 	const handleHamburger = () => {
 		setHamburger(!hamburger);
+	};
+
+	//funkcja zmieniająca wygląd aktywnych linków w navbar
+	const navLinkStyles = ({ isActive }) => {
+		return {
+			fontWeight: isActive ? "bold" : "normal",
+			color: isActive ? "#1ab00b" : "#646cff",
+		};
 	};
 
 	return (
@@ -23,13 +31,19 @@ export const Navbar = () => {
 			</div>
 			<ul className={hamburger ? "nav_menu open" : "nav_menu"}>
 				<li>
-					<Link to="/">Home</Link>
+					<NavLink style={navLinkStyles} to="/" end>
+						Home
+					</NavLink>
 				</li>
 				<li>
-					<Link to="/about">About</Link>
+					<NavLink style={navLinkStyles} to="/about">
+						About
+					</NavLink>
 				</li>
 				<li>
-					<Link to="/contact">Contact</Link>
+					<NavLink style={navLinkStyles} to="/contact">
+						Contact
+					</NavLink>
 				</li>
 			</ul>
 		</nav>
