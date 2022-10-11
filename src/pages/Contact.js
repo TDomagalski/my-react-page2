@@ -1,3 +1,3 @@
 export const Contact = () => {
-	return <div>Contact Page</div>;
+	return <div>Contact Page Netlify</div>;
 };
