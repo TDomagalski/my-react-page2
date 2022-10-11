@@ -1,0 +1,45 @@
+// ~~~~~~ COLORS ~~~~~~
+// ~~basic
+$black: #000;
+$white: #fff;
+$red: red;
+$green: green;
+$blue: blue;
+
+// ~~font colors
+$font_default: #fff;
+$fontBlack: $black;
+$fontWhite: $white;
+$fontRed: $red;
+$fontGreen: $green;
+$fontBlue: $blue;
+$fontHoverLink: #646cff;
+
+//~~borders colors
+$borderDefault: #646cff;
+
+// ~~btn colors
+$btnBgDefault: #1ab00b;
+
+// ~~random colors
+$bgFrontCounter: #0d9900;
+
+$theme-colors: (
+	//~~fonts
+	fontDefault: $font_default,
+	fontBlack: $fontBlack,
+	fontWhite: $white,
+	fontRed: $red,
+	fontGreen: $green,
+	fontBlue: $blue,
+	borderDefault: $borderDefault,
+	fontHoverLink: $fontHoverLink,
+	btnBgDefault: $btnBgDefault,
+	bgFrontCounter: $bgFrontCounter
+);
+
+// ~~~~~~ FUNCTIONS ~~~~~~
+// ~~font colors
+@function themeColors($key) {
+	@return map-get($theme-colors, $key);
+}
