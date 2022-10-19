@@ -12,7 +12,7 @@ import houseImg from "../img/house.webp";
 export const Home = () => {
 	return (
 		<div>
-			<div className="top_img"></div>
+			{/* <div className="top_img"></div> */}
 			<div className="container">
 				<div className="front_about">
 					<div className="left_img">

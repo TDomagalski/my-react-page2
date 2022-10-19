@@ -108,11 +108,22 @@ button {
 }
 
 .top_img {
-	background-image: url("../../img/topImg.webp");
+	background-image: url("../../img/topImg1.webp");
 	background-size: cover;
 	background-position: bottom;
 	height: 80vh;
 	width: 100%;
+}
+
+.top_imgv2 {
+	width: 100%;
+
+	img {
+		width: 100%;
+		height: auto;
+		max-height: 80vh;
+		object-fit: cover;
+	}
 }
 
 // ~~~~~~ BAR_CONTACT
